@@ -11,10 +11,12 @@ const App = () => {
     <CartProvider>
       <BrowserRouter>
         <Header />
+        <section className="container">
         <Routes>
           <Route path="/" exact element={<HomeScreen />} />
           <Route path="/Cart" exact element={<CartScreen />} />
         </Routes>
+        </section>
       </BrowserRouter>
     </CartProvider>
   )

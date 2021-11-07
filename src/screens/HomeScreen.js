@@ -17,7 +17,7 @@ const HomeScreen = () => {
     }, [])
 
     return (
-        <div className="container home-screen mt-5">
+        <div className="container home-screen mt-3">
             {
                 products.length === 0 ? (<Spinner />) : (
                     products.map((product, index) => (
